@@ -3,7 +3,7 @@ import { baseApi } from '../../api/baseApi';
 const ChatsApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     // Create a chat
-    createChat: builder.mutation({
+    createChat: builder?.mutation({
       query: (data) => ({
         url: `/chats`,
         method: 'POST',
@@ -11,14 +11,14 @@ const ChatsApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ['chats', 'messages'],
     }),
-    getUserChat: builder.query({
+    getUserChat: builder?.query({
       query: () => ({
         url: `/chats`,
         method: 'GET',
       }),
       providesTags: ['chats', 'messages'],
     }),
-    getSingleChat: builder.query({
+    getSingleChat: builder?.query({
       query: (chatId) => ({
         url: `/chats/${chatId}`,
         method: 'GET',

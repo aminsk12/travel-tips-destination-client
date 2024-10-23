@@ -2,7 +2,7 @@ import { baseApi } from '../../api/baseApi';
 
 const MessagesApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
-    createMessage: builder.mutation({
+    createMessage: builder?.mutation({
       query: (data) => ({
         url: `/messages`,
         method: 'POST',
@@ -10,7 +10,7 @@ const MessagesApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ['chats', 'messages'],
     }),
-    getUserMessages: builder.query({
+    getUserMessages: builder?.query({
       query: (chatId) => ({
         url: `/messages/${chatId}`,
         method: 'GET',
