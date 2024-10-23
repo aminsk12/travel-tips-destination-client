@@ -14,12 +14,12 @@ export default function Footer() {
           className="flex items-center gap-2 text-default-400 hover:text-primary transition-colors"
         >
           <span>Powered by</span>
-          <p className="font-bold text-primary text-lg">TT&DG</p>
+          <p className="font-bold text-primary text-lg">TravelQuesta</p>
         </Link>
       </div>
 
       <div className="text-sm text-default-400 text-center">
-        <p>&copy; {currentYear} All rights reserved.</p>
+        <p>&copy; {currentYear} All rights reserved. <span className="text-pink-700">AMIN SK</span></p>
       </div>
     </footer>
   );

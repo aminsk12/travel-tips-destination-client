@@ -70,11 +70,7 @@ export default function SearchInput() {
           inputWrapper: "bg-default-100",
           input: "text-sm",
         }}
-        endContent={
-          <Kbd className="hidden md:flex" keys={["command"]}>
-            K
-          </Kbd>
-        }
+        
         labelPlacement="outside"
         placeholder="Search..."
         radius="full"

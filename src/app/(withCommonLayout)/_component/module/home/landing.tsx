@@ -22,11 +22,10 @@ const LandingBanner: FC<TLandingBannerProps> = () => {
       </div>
       <div className="inline-block max-w-xl text-center justify-center z-10 animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-bold text-default-900">
-          Embark on Your Ultimate Adventure
+        Dive Into Your Once-in-a-Lifetime Journey
         </h1>
         <div className="text-lg md:text-xl mt-4 text-default-800">
-          Discover breathtaking destinations, share travel stories, and create
-          unforgettable memories with fellow explorers.
+        Journey to breathtaking locations, share your stories, and create unforgettable moments alongside fellow explorers.
         </div>
       </div>
 
@@ -60,7 +59,7 @@ const LandingBanner: FC<TLandingBannerProps> = () => {
       <div className="mt-8 z-10 animate-fade-in-up">
         <Snippet hideCopyButton hideSymbol variant="bordered">
           <span>
-            Get started with <Code color="primary">TT&DG Community</Code>
+            Get started with <Code color="primary">TravelQuesta Community</Code>
           </span>
         </Snippet>
       </div>

@@ -23,7 +23,7 @@ export default function NavBar() {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <BrandLogo />
-            <p className="font-bold text-inherit">TT&DG</p>
+            <p className="font-bold text-inherit">TravelQuesta</p>
           </NextLink>
         </NavbarBrand>
         <div className="hidden md:block">
